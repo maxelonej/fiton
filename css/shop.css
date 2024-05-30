@@ -1,0 +1,31 @@
+@import url(basic.css);
+
+/* Стили, относящиеся только к shop.css */
+main {
+  margin-top: 7em; 
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+}
+
+.shop {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 80%;
+  margin-inline: auto;
+  gap: 30px;
+}
+
+.shop-item {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  padding: 20px;
+  width: fit-content;
+  border-radius: 30px;
+  gap: 8px;
+  background: var(--content-bg);
+}

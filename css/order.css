@@ -1,0 +1,41 @@
+@import url(basic.css);
+
+main {
+  margin-top: 7em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.order {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.order-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  padding: 20px;
+  border-radius: 30px;
+  background: var(--content-bg);
+}
+
+h4 {
+  font-size: 1.2em;
+}
+
+@media (max-width: 425px) {
+  .order-container {
+    border-radius: 0px;
+    width: 100%;
+  }
+  h4 {
+    font-size: 1em;
+  }
+}

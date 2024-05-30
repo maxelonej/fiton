@@ -1,0 +1,28 @@
+@import url(basic.css);
+
+main {
+  margin-top: 7em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.payment {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 30px;
+}
+
+.payment-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  max-width: 380px;
+  padding: 20px;
+  gap: 10px;
+  border-radius: 30px;
+  background: var(--content-bg);
+}

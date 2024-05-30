@@ -1,0 +1,52 @@
+@import url(basic.css);
+
+/* Стилизация register.html */
+.login {
+  margin-top: 7em;
+  margin-inline: auto;
+  width: 65vw;
+  height: 65vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+  padding: 40px;
+  border-radius: 30px;
+  background: var(--content-bg);
+}
+
+form div {
+  margin-top: 1em;
+}
+form a:nth-child(1) {
+  margin-right: 1em;
+}
+
+.btn {
+  font-size: 1em;
+}
+
+footer {
+  border-top: 1px solid var(--gray);
+}
+
+.forgot-password {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+@media (max-width: 768px) {
+  .forgot-password {
+    font-size: .8em;
+  }
+}

@@ -1,0 +1,42 @@
+@import url(basic.css);
+
+/* Стилизация register.html */
+.register {
+  margin-top: 7em;
+  margin-inline: auto;
+  width: 65vw;
+  height: 65vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+  padding: 40px;
+  border-radius: 30px;
+  background: var(--content-bg);
+}
+
+.btn {
+  font-size: 1em;
+}
+
+footer {
+  border-top: 1px solid var(--gray);
+}
+
+@media (max-width: 768px) {
+  button {
+    font-size: .9em;
+  }
+}
+
+small {
+  display: none;
+}

@@ -1,0 +1,361 @@
+/* Переменные */
+@import url(root.css);
+/* Шрифт */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* Стили, относящиеся к каждой странице */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg);
+}
+
+a {
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+img {
+  -webkit-user-drag: none;
+}
+
+input {
+  padding: 5px;
+  border: 1px solid var(--gray);
+  border-radius: 4px;
+  outline: none;
+  transition: var(--transition);
+}
+input:hover {
+  border: 1px solid var(--text);
+}
+input:focus {
+  border: 1px solid var(--text);
+}
+
+select {
+  padding: 5px;
+  transition: var(--transition);
+}
+select:hover {
+  border: 1px solid var(--text);
+}
+
+.icon {
+  width: 50px;
+}
+
+.title {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+.lower-title {
+  font-size: 1.4em;
+}
+
+.description {
+  font-size: 1.1em;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+button, .btn {
+  padding: 10px 25px;
+  background: var(--primary);
+  color: var(--white-text);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+button:hover, .btn:hover {
+  background: var(--primary-hover);
+}
+
+/* Шапка */
+header {
+  position: fixed;
+  top: 0; 
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: var(--content-bg);
+  border-bottom: 1px solid var(--bg);
+}
+
+footer h2 {
+  margin-bottom: .6em;
+}
+
+/* Лого */
+.link-logo {
+  transition: var(--transition);
+}
+.link-logo:hover {
+  filter: var(--filter-opacity);
+}
+
+/* Навигация */
+header ul {
+  display: flex;
+  gap: 40px;
+  list-style-type: none;
+}
+
+.nav-link {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 500;
+  transition: var(--transition);
+  font-size: 1.2em;
+}
+.nav-link:hover {
+  color: var(--text-hover);
+}
+
+/* Ссылки иконки */
+.img-links {
+  display: flex;
+  gap: 30px;
+  /* ? */
+  margin-right: 2em;
+}
+
+.img-links {
+  transition: var(--transition);
+}
+.img-links .icon:hover {
+  filter: var(--filter-opacity);
+}
+
+/* Бургер */
+.burger {
+  display: none;
+  margin-right: 1em;
+}
+.burger img {
+  width: 50px;
+  height: 50px;
+}
+
+.burger-open {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: var(--transition);
+  transform: translateX(100%);
+  width: 100%;
+  height: 100%;
+  background: var(--content-bg);
+}
+
+.burger-close {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+}
+.burger-close img {
+  border-radius: 30px;
+}
+
+@media (max-width: 768px) {
+  /* Уменьшение font-size */
+  .title {
+    font-size: calc(2em / 1.2);
+    margin-bottom: 1em;
+  }
+  .lower-title {
+    font-size: 1.4em;
+  }
+  .description {
+    font-size: calc(1.1em / 1.5);
+  }
+  .nav-link {
+    font-size: 1.1em;
+  }
+  h3 { 
+    font-size: 1.2em;
+  }
+  h4 { 
+    font-size: 1.1em;
+  }
+  button, .btn {
+    font-size: calc(1.1em / 1.5);
+    padding: 5px 10px;
+  }
+  /* Показывать бургер */
+  .burger {
+    display: block;
+  }
+  /* Скрывать навигацию и ссылки иконки */
+  .pc {
+    display: none;
+  }
+  /* Открыть бургер меню */
+  .burger-open.active {
+    transform: translateX(0);
+  }
+  .burger-open nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .burger-open .img-links {
+    margin-top: 30px;
+  }
+}
+
+/* Подвал */
+footer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  text-align: center;
+  gap: 30px;
+  padding: 20px;
+  margin-top: 20px;
+  border-top: 1px solid var(--gray);
+}
+
+.nav-footer ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 10px;
+}
+
+.partners-icon {
+  width: 70px;
+  max-width: 100%;
+}
+
+.partners {
+  display: flex;
+  width: 160px;
+  flex-flow: row wrap;
+  gap: 10px;
+}
+
+.socials-icon {
+  width: 40px;
+}
+
+/* Контент */
+.img {
+  width: 300px;
+}
+
+.content-container {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 30px;
+}
+
+.trener {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 1em;
+  border-radius: 10px;
+}
+.trener {
+  background: var(--additional);
+}
+.trener-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+}
+.trener .column {
+  margin: 0 5px;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 30px;
+  background: var(--content-bg);
+}
+
+/* Слайдер */
+.slider {
+  display: flex;
+  gap: 20px;
+  overflow-x: scroll;
+}
+
+.slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: var(--content-bg);
+}
+.slide .description {
+  margin-bottom: .6em;
+}
+.slide h2 {
+  margin-bottom: .5em;
+}
+
+/* Всплывающее окно */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: var(--popup-bg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  opacity: 0;
+  transition: var(--transition);
+}
+.popup-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 60px;
+  background: var(--content-bg);
+}
+
+.popup.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.popup-close:hover {
+  scale: .9;
+}

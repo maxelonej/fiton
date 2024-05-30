@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Подключение CSS -->
+    <link rel="stylesheet" href="css/register.css">
+    <!-- Иконка вкладки -->
+    <link rel="shortcut icon" href="img/Иконки/favicon.svg" type="image/x-icon">
+    <!-- Название вкладки -->
+    <title>FitON</title>
+</head>
+
+<body>
+    <!-- Шапка -->
+    <header>
+        <!-- Лого -->
+        <div class="logo">
+            <a href="index.html"><img class="icon link-logo" src="img/Иконки/logo.svg" alt="Лого"></a>
+        </div>
+        <!-- Навигация -->
+        <nav class="pc">
+            <ul>
+                <li><a class="nav-link" href="index.html#exclusive">Эксклюзив</a></li>
+                <li><a class="nav-link" href="index.html#collections">Подборки</a></li>
+                <li><a class="nav-link" href="index.html#subscriptions">Подписка</a></li>
+            </ul>
+        </nav>
+        <!-- Ссылки иконки -->
+        <div class="img-links pc">
+            <a href="index.html#user-choice"><img class="icon" src="img/Иконки/Тренировки/6.png" alt="Тренировки"></a>
+            <a href="certificate.html"><img class="icon" src="img/Иконки/Подарок/1.png" alt="Подарок"></a>
+            <a href="shop.html"><img class="icon" src="img/Иконки/Корзина/6.png" alt="Корзина"></a>
+        </div>
+
+        <!-- Мобильная версия: -->
+        <!-- Бургер -->
+        <div class="burger">
+            <img src="img/Иконки/burger.svg" alt="Бургер меню">
+        </div>
+
+        <!-- При открытии бургера, содержит: -->
+        <div class="burger-open">
+            <nav>
+                <ul>
+                    <li><a class="nav-link" href="index.html#exclusive">Эксклюзив</a></li>
+                    <li><a class="nav-link" href="index.html#collections">Подборки</a></li>
+                    <li><a class="nav-link" href="index.html#subscriptions">Подписка</a></li>
+                </ul>
+            </nav>
+            <div class="img-links">
+                <a href="index.html#user-choice"><img class="icon" src="img/Иконки/Тренировки/6.png"
+                        alt="Тренировки"></a>
+                <a href="certificate.html"><img class="icon" src="img/Иконки/Подарок/1.png" alt="Подарок"></a>
+                <a href="shop.html"><img class="icon" src="img/Иконки/Корзина/6.png" alt="Корзина"></a>
+            </div>
+            <div class="burger-close">
+                <img class="icon" src="img/Иконки/close.svg" alt="Закрыть">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="register">
+            <h1 class="title">Регистрация</h1>
+            <form id="form">
+                <div class="form-input">
+                    <input type="text" name="name" id="name" placeholder="Имя" required autocomplete="name">
+                    <small>Text</small>
+                </div>
+                <input type="text" name="surname" id="surname" placeholder="Фамилия" required autocomplete="name">
+                <input type="email" name="email" id="email" placeholder="Электронная почта" required autocomplete="email">
+                <input type="tel" name="tel" id="tel" placeholder="Телефон" required autocomplete="tel">
+                <input type="date" name="birth-date" id="birth-date" placeholder="Дата рождения" min="1914-01-01"
+                    max="2018-12-31" required autocomplete="bday">
+                <input type="password" name="password" id="password" placeholder="Пароль" required autocomplete="new-password">
+                <input type="password" name="password-again" id="password-again" placeholder="Повтор пароля" required autocomplete="new-password">
+                <button type="submit">Зарегистрироваться</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Подвал -->
+    <footer>
+        <!-- Навигация -->
+        <nav class="nav-footer">
+            <h2 class="lower-title">Навигация по сайту</h2>
+            <ul>
+                <li><a class="nav-link" href="index.html#exclusive">Эксклюзив</a></li>
+                <li><a class="nav-link" href="index.html#collections">Подборки</a></li>
+                <li><a class="nav-link" href="index.html#subscriptions">Подписка</a></li>
+            </ul>
+        </nav>
+        <!-- Партнеры -->
+        <div class="partners-container">
+            <h2 class="lower-title">Партнеры</h2>
+            <div class="partners">
+                <img class="partners-icon" src="img/Картинки/Партнеры/Casio.png" alt="Партнер Casio">
+                <img class="partners-icon" src="img/Картинки/Партнеры/Demix.png" alt="Партнер Demix">
+                <img class="partners-icon" src="img/Картинки/Партнеры/JBL.png" alt="Партнер JBL">
+            </div>
+        </div>
+        <!-- Соц сети -->
+        <div class="socials">
+            <h2 class="lower-title">FitON в соцсетях</h2>
+            <img class="socials-icon" src="img/Иконки/Соцсети/Telegram.png" alt="Телеграм FitON">
+            <img class="socials-icon" src="img/Иконки/Соцсети/ВК.png" alt="VK FitON">
+        </div>
+    </footer>
+
+    <script src="js/burger.js"></script>
+    <script src="js/register.js"></script>
+</body>
+
+</html>
